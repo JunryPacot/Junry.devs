@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">      
+        <link href="style.css" rel="stylesheet" type="style/css">
+        <style>
+            body {
+                background-color: black; /* Set background color to black */
+                color: white; /* Set text color to white for contrast */
+            }
+            .credit {
+                text-align: center; /* Center the text */
+                margin-top: 20px; /* Space from the top */
+                font-size: 16px; /* Font size for the credit */
+            }
+        </style>
+    </head>
+    <body>
+      <div class="credit">
+          Developed by <a href="https://www.facebook.com/profile.php?id=100075262125552" style="color: blue; text-decoration: underline;">Junry Pacot</a>
+      </div>
+      <center>
+          <img src="Cutes.gif" height="200px" width="200px;" style="display-block; margin-auto">
+      </center>
+      <center>
+          <i>Cge na ba kita nalang pinugsanay nani😭</i>
+      </center>
+      
+      <!-- Add audio element -->
+      <audio id="backgroundMusic" src="Tayu.mp3" type="audio/mp3"></audio>
+      
+      <script>
+          // Series of alerts
+          alert("WARNING!⚠️");   
+          alert("What if?");
+          alert("Naakuy gusto saimo?");
+          alert("What if?");
+          alert("Kita jud?"); 
+          alert("What if?"); 
+          alert("Kita jud sa usag usa?");
+          alert("What if?");
+          alert("Gusto tika pero diko nimo gusto😩");
+
+          // Play music after the last alert
+          var music = document.getElementById("backgroundMusic");
+
+          // Use setTimeout to delay the play a bit, giving the user time to dismiss the alerts
+          setTimeout(function() {
+              music.play().catch(function(error) {
+                  console.log("Music autoplay was prevented: " + error);
+              });
+          }, 1000); // Adjust the delay time if needed
+      </script>
+    </body>
+</html>
